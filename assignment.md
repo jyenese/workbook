@@ -18,6 +18,8 @@
  - routers and routing
  - domains and DNS
  
+ Explain how each technology has contributed to the development of the internet.
+ 
  
  
  #### **Packets:**
@@ -51,13 +53,42 @@
 
     A router is constantly running the link state algorithim to figure out which efficient route it has to path to the destination. A link state is home base for the router, and the algorithm is constantly solving the more efficent way through all the other link layers. This algorithm has contributed to the developement to the internet by allowing information and data to be transfered the fasted and most efficient way.
   
-#### **Domains and DNS
+#### **Domains and DNS**
 
     A domain name is one of two things, the name of said url 'coderacademy.com.au' and the IP version that the DNS (Domain Name Service) communicates with '255.255.255.0' etc. From the outside in, when viewing a website all you will see is the domain name 'coderacademy.com.au' but in reality its actually being called '255.255.255.0' via the DNS.
 
     If all domain names were a bunch of numbers, nobody would remember the address to other domains. The domain name allows you to type in 'coderacademy.com.au' and skip the struggle of typing in a bunch of numbers that you'll most likely forget. Everytime you search for a website the DNS keeps track of the IP addresses assosiated with the name, and translates that to the website. This has helped with the developement of the internet by making it easier to search the web with basic website domains.
+    
+#### **Define the features of the following technologies that are essential in terms of the development of the internet:**
+ - TCP
+ - HTTP and HTTPS
+ - web browsers (requests, rendering and developer tools)
+
+Explain how each technology has contributed to the development of client and server communication over the internet (50 - 150 words for each technology)
+
+
+#### **TCP**
+
+    Transmission Control Protocol (TCP) is a model designed to standardise computer networking. TCP defines how applications can create communication channels and also manages how a message is broken down to be transmitted. TCP is made up of five different layers, application, transport, network, data link and physical.
+    Everytime your computer or device transmits data throughout ethernet it will go through these five stages, either side of the transmission. It works as a pyramid adding data from each layer. It starts of at the application (HTTP/FTP/SMTP), then transports through TCP or UDP to then checking the connection through your IP via the router, then moves making your way into the ethernet to be sent off and done in reverse to the reciever, while taking off layers to make it back to the application. This method has contributed to the developement of communication over the internet.
 
     
+    
+#### **HTPP and HTTPS**
+
+    Hyptertext Transfer Protocol (HTTP) and Hypertext Transfer Protocol Secure (HTTPS) is a network protocol that enables connection to a host, webpage etc. Hypertext being the the content you're viewing on a web browser, this is the method of transfering between a server and a web server on the internet. When you click on a webpage it sends HTTP to the web server which then runs a application to process and send the HTTP back to the webpage.
+    
+    When sending a request through HTTP to the server or webserver its unsecure, making it very available for anybody to view the data, but when connecting via HTTPS the connection is encrypted for nobody to view, making it safer to connect. This has contributed to the development of client and server communication by allowing the people to be able to request data from there computer to be displayed onto there home device.
+
+   #### **web browsers (requests, rendering and developer tools)**
+
+    A web browser is an application on the internet that gathers information to display or function abilities on the internet. There are multiple web browsers all with there own set of engines, each engine not working on other browsers, so the HTML and CSS code may be different if you looked between them. Internet explorer uses an engine called Trident, Google Chrome uses Blink, and Mozilla Firefox uses Gecko. How it all works is when you type in a HTTP or HTTPS url the browser requests the data to display onto the webpage, after its recieved the data is then rendered into a visual display on the browser. The developer tools allows the user inspect code via the browser, the code being HTML/CSS/JAVA/DOM, this allows the developer to create, test and debug software before releasing there product. Web browsers have made a huge contribution to client and server communication by allowing users to connect to web in a smart and easy way. Also allowing developers to create and produce helpful products to make the whole experience better.
+
+
+
+
+
+
 
 
  
