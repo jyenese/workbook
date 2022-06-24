@@ -59,7 +59,7 @@
 
     If all domain names were a bunch of numbers, nobody would remember the address to other domains. The domain name allows you to type in 'coderacademy.com.au' and skip the struggle of typing in a bunch of numbers that you'll most likely forget. Everytime you search for a website the DNS keeps track of the IP addresses assosiated with the name, and translates that to the website. This has helped with the developement of the internet by making it easier to search the web with basic website domains.
     
-#### **Define the features of the following technologies that are essential in terms of the development of the internet:**
+#### **Q3. Define the features of the following technologies that are essential in terms of the development of the internet:**
  - TCP
  - HTTP and HTTPS
  - web browsers (requests, rendering and developer tools)
@@ -85,6 +85,36 @@ Explain how each technology has contributed to the development of client and ser
     A web browser is an application on the internet that gathers information to display or function abilities on the internet. There are multiple web browsers all with there own set of engines, each engine not working on other browsers, so the HTML and CSS code may be different if you looked between them. Internet explorer uses an engine called Trident, Google Chrome uses Blink, and Mozilla Firefox uses Gecko. How it all works is when you type in a HTTP or HTTPS url the browser requests the data to display onto the webpage, after its recieved the data is then rendered into a visual display on the browser. The developer tools allows the user inspect code via the browser, the code being HTML/CSS/JAVA/DOM, this allows the developer to create, test and debug software before releasing there product. Web browsers have made a huge contribution to client and server communication by allowing users to connect to web in a smart and easy way. Also allowing developers to create and produce helpful products to make the whole experience better.
 
 
+#### ** Q4. Identify THREE data structures used in the Python programming language and explain the reasons for using each.**
+
+    
+
+#### ** Q5. Describe the features of interpreters and compilers and how they are different.**  
+
+
+    A compiler is a program on the computer that scans the entire program and transforms code written in a programming language into machine code. 
+
+    It's a program that translates readable code to a language a computer can only understand, the language gets compiled into binary (1, 0) which humans cannot read. 
+
+    A interpreter on the other hand is much faster in response, because instead of having to scan the whole program, it only scans a specific statement. 
+
+#### **Q6.Identify TWO commonly used programming languages and explain the benefits and drawbacks of each.**
+
+#### **Javascript**
+
+#### **Python**
+
+#### ** Q7. Identify TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically responsible in terms of the issue.
+
+List of topics containing ethical issues:
+ - **criminal acts such as theft, fraud, trafficking and distribution of prohibited substances, terrorism**
+ - GPS tracking data and other types of metadata, MAC addresses, hardware fingerprints
+
+ The ethical issues with "criminal acts such as theft, fraud, trafficking and distribution of prohibited substances, terrorism" are that all of these actions are illegal, and in no situation should it be right to have to be put in a decision to act if you are doing the right or wrong thing. 
+
+ #### **Q8. Explain control flow, using examples from the Python programming language**
+
+#### ** Q9. Explain the difference between type coercion and type conversion. Are either of these used in Python?**
 
 
 
