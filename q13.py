@@ -8,10 +8,11 @@ i = 0
 while (i < len(arr) -1):
     # and (arr[i] <= arr [i+1]
     if (arr[i] >= arr[i+1]):
-        print(i)
         saved = arr[i+1]
         arr[i+1] = arr[i]  
-        arr[i] = saved
-        print(arr)
+        arr[i] = saved  
+        print(arr) 
+        i = len(arr)
 
     i += 1
+

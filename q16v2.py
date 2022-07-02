@@ -26,10 +26,11 @@ for skill in skills:
 
     elif knows_skill == "no":
         result = result + skill.name
+        score2 = score
 
 print("your score is: ",score)
-print("You should learn:", result,)
+print("You should learn:", result,"Total points lost:", score2)
 
-    
+#ended up giving up on this till a later time, spent too much time trying to figure out how to get total points added for those you didnt know.
 
 
