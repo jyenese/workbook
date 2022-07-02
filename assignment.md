@@ -233,7 +233,42 @@ staff {
     accept_payment
 }
 
+####  ** Q12 Identify and explain the error in the code snippet below that is preventing correct execution of the program **
 
+``` 
+# First of all there was no text in the input, so it was asking for nothing in terminal. (This actually doesn't matter but it always helps.)(It will still give an answer.)
+# Converted celsius to a float, because when asking for a number in the string, you need to convert with int or float.
+
+celsius = float(input("Insert text here"))
+
+fahrenheit = (celsius*9/5)+32
+
+print(f"The result is: {fahrenheit}.")
+```
+
+#### ** Q13	The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly. **
+
+```
+    arr = [5, 22, 29, 39, 19, 51, 78, 97, 84]
+    i = 0
+    while (i < len(arr) -1):
+        # and (arr[i] <= arr [i+1]
+        if (arr[i] >= arr[i+1]):
+            saved = arr[i+1]
+            arr[i+1] = arr[i]  
+            arr[i] = saved  
+            print(arr) 
+            i = len(arr)
+
+        i += 1
+
+```
+
+#### ** Q14	Demonstrate your algorithmic thinking through completing the following two tasks, in order:**
+ 1. Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations
+ 2. Write pseudocode for the process outlined in your flowchart 
+
+ ![flow_chart](./WorkBook/photos/prime_numbers_flowchart.jpg)
  
 
 
