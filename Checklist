@@ -72,5 +72,5 @@ You have access to two variables: raining (boolean) and temperature (integer). I
  - JavaScript (128)
 ​
  Write a program that allows a user to input their skills and then tells them 
- a) Their overall "coding skill score"  -->
- <!-- b) Skills they may want to learn, and how much each one would improve their score -->
+    a) Their overall "coding skill score" 
+    b) Skills they may want to learn, and how much each one would improve their score -->

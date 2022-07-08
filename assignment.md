@@ -268,10 +268,165 @@ print(f"The result is: {fahrenheit}.")
  1. Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations
  2. Write pseudocode for the process outlined in your flowchart 
 
- ![flow_chart](./WorkBook/photos/prime_numbers_flowchart.jpg)
+ ![flow_chart](./prime_numbers_flowchart.jpg)
  
+``` # This is pseudocode
+
+function is_prime(num)
+    for x in range(2, num):
+        if (num modulus x) == 0:
+            return False
+    return True
+
+for i in range(1...100)
+    if is_prime(i)
+        print "{i} is prime"
+    
+
+# This is written in python
+
+def is_prime(num):
+    for x in range(2, num):
+        if (num%x) == 0:
+            return False
+    return True
+        
+for i in range(1, 101):
+    if is_prime(i):
+        print("Is prime", i)
+```
+
+#### **15	Write pseudocode OR Python code for the following problem:**
+You have access to two variables: raining (boolean) and temperature (integer). If it’s raining and the temperature is less than 15 degrees, print to the screen “It’s wet and cold”, if it is less than 15 but not raining print “It’s not raining but cold”. If it’s greater than or equal to 15 but not raining print “It’s warm but not raining”, and otherwise tell them “It’s warm and raining” 
+
+``` 
+raining = input("Is it raining?:")  
+temperature = int((input("How hot is it in degrees? ")))
+if temperature < 15 and raining == "yes":
+    print("it's wet and cold")
+elif temperature < 15 and raining == "no":
+    print("It's not raining but cold.")
+elif temperature >= 15 and raining == "no":
+    print("Its warm but no raining")
+else:
+    print("its warm and raining")
+    
+```
 
 
+#### **Q16 ACME Corporation are hiring a new junior developer, as part of their hiring criteria they've created a "coding skill score" based on the specific competencies they require for this role; the more important the skill is for ACME corp, the more points it contributes to the "coding skill score" The skills are weighted as follows:**
+ - Python (1)
+ - Ruby (2)
+ - Bash (4)
+ - Git (8)
+ - HTML (16)
+ - TDD (32)
+ - CSS (64)
+ - JavaScript (128)
+​
+ Write a program that allows a user to input their skills and then tells them 
+    a) Their overall "coding skill score" 
+    b) Skills they may want to learn, and how much each one would improve their score
+
+```
+score = 0
+result = ""
+
+PYTHON = 1
+RUBY = 2
+BASH = 4
+GIT = 8
+HTML = 16
+TDD = 32
+CSS = 64
+JAVASCRIPT = 128
 
 
+skill = input("Do you know Python?:")
 
+if skill == "yes":
+    score = score + PYTHON
+elif skill == "no":
+    result = "Python (1 point)"
+
+skill = input("Do you know Ruby?:")
+
+if skill == "yes": 
+    score = score + RUBY
+elif skill == "no":
+    result = result + ",Ruby (2 points)"
+
+skill = input("Do you know Bash?:")    
+if skill == "yes":
+    score = score + BASH    
+elif skill == "no":
+    result = result + ",BASH (4 points)"
+
+skill = input("Do you know Git?:")    
+if skill == "yes":
+    score = score + GIT
+elif skill == "no":
+    result = result + ",GIT (8 points)"
+
+skill = input("Do you know HTML?:")    
+if skill == "yes":
+    score = score + HTML 
+elif skill == "no":
+    result = result + ",HTML (16 points)"
+
+skill = input("Do you know TDD?:")    
+if skill == "yes":
+    score = score + TDD   
+elif skill == "no":
+    result = result + ",TDD (32 points)"
+
+skill = input("Do you know CSS?:")    
+if skill == "yes":
+    score = score + CSS
+elif skill == "no":
+    result = result + ",CSS (64 points)"
+
+skill = input("Do you know Javascript??:")    
+if skill == "yes":
+    score = score + JAVASCRIPT
+elif skill == "no":
+    result = result + ",JAVASCRIPT (128 points)"
+
+print("Your score is:",score)
+print("You should learn:", result)
+```
+
+This was another way I tried to do it, but kept failing at getting the points option added. 
+
+```
+score = 0
+result = ""
+class skill: 
+    def __init__(self, name, value): 
+        self.name = name
+        self.value = value
+
+skills = [
+    skill("PYTHON", 1),
+    skill("RUBY", 2),
+    skill("BASH", 4),
+    skill("GIT", 8),
+    skill("HTML", 16),
+    skill("TDD", 32),
+    skill("CSS", 64),
+    skill("JAVASCRIPT", 128),
+]
+
+for skill in skills:
+    knows_skill = input(f"Do you know {skill.name}?:")
+
+    if knows_skill == "yes": 
+        score = score + skill.value 
+
+    elif knows_skill == "no":
+        result = result + skill.name
+        score2 = score
+
+print("your score is: ",score)
+print("You should learn:", result,"Total points lost:", score2)
+```
